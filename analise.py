@@ -8,7 +8,6 @@ Data: 2024
 
 """
 
-
 import os  # Importação do módulo os para lidar com operações do sistema operacional
 import pandas as pd  # Importação do módulo pandas para manipulação de dados tabulares
 import matplotlib.pyplot as plt  # Importação do módulo matplotlib para visualização de dados
@@ -171,6 +170,6 @@ def main(directory, output_directory):
     analyze_residuals(X_throughput, y_throughput, y_throughput_pred, output_directory, "Throughput")
 
 if __name__ == "__main__":
-    csv_directory = "/Users/palleta/Desktop/Dados_Mensais"  # Diretório contendo os arquivos CSV
-    output_directory = "/Users/palleta/Desktop/Dados_Mensais/Resultado_Analise"  # Diretório de saída para os resultados e gráficos
+    csv_directory = "seu_diretorio_contendo_os_arquivos_csv"  # Diretório contendo os arquivos CSV
+    output_directory = "seu_diretorio_para_salvar_os_arquivos_gerados"  # Diretório de saída para os resultados e gráficos
     main(csv_directory, output_directory)  # Chamada da função principal
